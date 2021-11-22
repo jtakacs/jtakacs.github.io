@@ -1,0 +1,28 @@
+{
+  "name": "rotating_earth",
+  "version": "1.0.0",
+  "description": "[https://jtakacs.github.io](https://jtakacs.github.io)",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "rm -rf dist ; mkdir -p dist/textures ; cp -a src/textures/* dist/textures/ ; parcel",
+    "build": "rm -rf dist ; mkdir -p dist/textures ; cp -a src/textures/* dist/textures/ ; parcel build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtakacs/jtakacs.github.io.git"
+  },
+  "author": "",
+  "license": "GPL3",
+  "bugs": {
+    "url": "https://github.com/jtakacs/jtakacs.github.io/issues"
+  },
+  "homepage": "https://github.com/jtakacs/jtakacs.github.io#readme",
+  "dependencies": {
+    "three": "^0.134.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.0.1"
+  }
+}
