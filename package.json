@@ -2,9 +2,9 @@
   "name": "rotating_earth",
   "version": "1.0.0",
   "description": "[https://jtakacs.github.io](https://jtakacs.github.io)",
-  "source": "src/index.html",
+  "source": "src/*.html",
   "scripts": {
-    "start": "rm -rf dist ; mkdir -p dist/textures ; cp -a src/textures/* dist/textures/ ; parcel",
+    "start": "rm -rf dist ; mkdir -p dist ; ln -s ../src/textures/ ./dist/textures ; parcel",
     "build": "rm -rf dist ; mkdir -p dist/textures ; cp -a src/textures/* dist/textures/ ; parcel build",
     "deploy": "gh-pages -d dist"
   },

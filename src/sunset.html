@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+        }
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }    
+        #overview {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: flex-start;
+        align-items: stretch;
+        z-index: 1000;    
+        color:  rgb(76, 233, 102);
+        font-weight: bold;
+        font-size: 2vh;
+        text-shadow: 2px 3px 5px black;
+        padding: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="overview">
+        <div>Angular height of the sun: <span id="angle">0</span>°</div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: left;">Controls:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>W</td><td>more winter in Australia</td></tr>
+                <tr><td>S</td><td>more summer in Australia</td></tr>
+                <tr><td>A</td><td>less ambient light</td></tr>
+                <tr><td>D</td><td>more ambient light</td></tr>
+                <tr><td>SPACE</td><td>return to initial position</td></tr>
+                <tr><td>Left drag</td><td>rotate</td></tr>
+                <tr><td>Right drag</td><td>pan</td></tr>
+                <tr><td>Scroll</td><td>zoom</td></tr>
+                <tr><td>C</td><td>show/hide controls</td></tr>
+                <tr><td>L</td><td>show/hide lines</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="sunset.js"></script>
+</body>
+</html>

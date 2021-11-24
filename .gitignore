@@ -1,6 +1,6 @@
 .idea
 .vscode
-.parcel_cache
+.parcel_cache/
 
 # Logs
 logs
