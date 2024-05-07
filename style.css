@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  color: aliceblue;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  pointer-events: none;
+  top: 1024px;
+  left: 0;
+  width: 1024px;
+  height: 512px;
+  z-index: 1;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background: black;
+}
+
+#attribution {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+}
